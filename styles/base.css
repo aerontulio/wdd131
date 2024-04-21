@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    max-width: 100%;
+}
+
+header {
+    background-color: #222831;
+    color: #EEEEEE;
+    text-align: center;
+    
+}
+
+header h1 {
+    padding-block: 30px;
+    font-family: Montserrat;
+}
+
+nav {
+    background-color: #31363F;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    padding-block: 10px;
+    padding-inline: 50px;
+    transition: font-weight 0.5s ease;
+    
+}
+
+nav a:hover {
+    font-weight: bolder;
+    font-size: 1.5rem
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.card {
+    margin: 10px;
+    border: #222831 5px solid;
+    border-radius: 5px;
+}
+
+.card h2 {
+    text-align: center;
+    padding-block: 10px;
+    background-color: #222831;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    color: #EEEEEE;
+}
+
+.card img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.personal-info p {
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: Montserrat;
+    margin-right: 10px;
+}
+
+.card h3 {
+    text-align: center;
+    border-bottom: #222831 1px solid;
+    margin: 0 auto;
+    width: 700px;
+    padding-bottom: 5px;
+    font-family: Montserrat;
+    color: #222831;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.country-info p {
+    font-size: 1rem;
+    text-align: justify;
+    font-family: Montserrat;
+    margin-left: 10px;
+}
+
+.country-info figcaption {
+    font-size: .8rem;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+
+.card ul {
+    padding-left: 30px;
+    padding-top: 20px;
+    list-style-type: none;
+    
+}
+
+.card li {
+    margin-bottom: 40px;
+}
+
+.card a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 2rem;
+    color: #222831;
+    transition: font-weight 0.5s ease;
+}
+
+.card a:hover {
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+footer {
+    background-color: #222831;
+    color: #EEEEEE;
+    text-align: center;
+    padding-block: 30px;
+    font-family: Montserrat;
+}
+
