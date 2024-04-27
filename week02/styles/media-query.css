@@ -14,10 +14,15 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  align-items: center;
+  
 }
 
 section {
   padding: 1rem;
   background-color: #fff;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
