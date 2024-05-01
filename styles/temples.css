@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    max-width: 100%;
+    align-items: center;
+}
+
+header {
+    background-color: #222831;
+    color: #EEEEEE;
+    
+}
+
+header h1 {
+    padding-block: 30px;
+    font-family: Montserrat;
+    padding-left: 30px;
+}
+
+
+/* hamburger button */
+.menu {
+	font-size: 1.75rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.menu::before {
+	content: "☰";
+}
+
+.menu.open::before {
+	content: "✖";
+}
+
+.navigation { /* Hide the navigation menu by default */
+    display: none;
+}
+
+.navigation.open { /* Display the navigation menu when the open class is applied */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    top: 99px;
+    padding: 30px;
+    background-color: rgba(49, 54, 63, 0.9);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    padding-block: 10px;
+    padding-inline: 50px;
+    transition: font-weight 0.5s ease; 
+}
+
+.navigation a:hover {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+/* main css here */
+
+main h2 {
+    padding-block: 30px;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+
+.temples {
+    display: block;
+    padding-bottom: 30px;
+}
+
+
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+figure:hover img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+figure:hover figcaption {
+    font-weight: bold;
+    transition: font-weight 0.5s ease;
+}
+
+
+
+
+
+footer {
+    background-color: #222831;
+    color: #EEEEEE;
+    text-align: center;
+    padding-block: 10px;
+    font-family: Montserrat;
+}
