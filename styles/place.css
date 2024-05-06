@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 100%;
+}
+
+
+/* header */
+header {
+    background-color: #860a0a;
+    border-bottom: #210a86 solid 30px;
+}
+
+header h1 {
+    font-size: 3rem;
+    padding-block: 30px;
+    font-family: Montserrat;
+    padding-left: 30px;
+    text-align: center;
+    color: white;
+}
+
+
+/* hero image */
+main img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* details design */
+
+.card {
+    padding-block: 20px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.card h2 {
+    color: black;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card p {
+    font-family: Montserrat;
+    padding: 5px;
+}
+
+.card span.label, .temperature, .conditions, .wind, .wind_chill {
+    display: inline-table;
+    text-align: end;
+    width: 150px;
+    font-weight: bold; 
+}
+
+#weather img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #860a0a;
+    color: white;
+    text-align: center;
+    padding-block: 10px;
+    font-family: Montserrat;
+}
+
+
+
+@media screen and (min-width: 840px) {
+
+    /* card design and position */
+    .card {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        padding-right: 20px;
+    }
+    #data {
+        top: 200px;
+        left: 50px;
+    }
+    #weather {
+        top: 550px;
+        right: 50px;
+    }
+    .card h2 {
+        text-align: left;
+        background-color: #210a86;
+        color: white;
+        width: 180px;
+        margin-left: -10px;
+        padding: 10px;
+    }
+
+    /* presence of weather icon in large screen */
+    #weather img {
+        display: none;
+    }
+    #weather h2::after {
+        content: " ⛅";
+    }
+}
