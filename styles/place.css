@@ -84,7 +84,7 @@ footer {
 }
 
 
-@media screen and (min-width: 840px) {
+@media (min-width: 840px) {
 
     /* card design and position */
     .card {
