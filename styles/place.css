@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --main-color: #860a0a;
+    --secondary-color: #210a86;
+    --main-font-color: white;
+    --secondary-font-color: black;
+    --main-font: Montserrat;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -12,19 +20,18 @@ body {
 
 /* header */
 header {
-    background-color: #860a0a;
-    border-bottom: #210a86 solid 30px;
+    background-color: var(--main-color);
+    border-bottom: var(--secondary-color) solid 30px;
 }
 
 header h1 {
     font-size: 3rem;
     padding-block: 30px;
-    font-family: Montserrat;
+    font-family: var(--main-font);
     padding-left: 30px;
     text-align: center;
-    color: white;
+    color: var(--main-font-color);
 }
-
 
 /* hero image */
 main img {
@@ -34,7 +41,6 @@ main img {
 }
 
 /* details design */
-
 .card {
     padding-block: 20px;
     margin: 0 auto;
@@ -42,14 +48,14 @@ main img {
 }
 
 .card h2 {
-    color: black;
-    font-family: Montserrat;
+    color: var(--secondary-font-color);
+    font-family: var(--main-font);
     margin-bottom: 20px;
     text-align: center;
 }
 
 .card p {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     padding: 5px;
 }
 
@@ -70,13 +76,12 @@ main img {
 
 /* footer */
 footer {
-    background-color: #860a0a;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--main-font-color);
     text-align: center;
     padding-block: 10px;
-    font-family: Montserrat;
+    font-family: var(--main-font);
 }
-
 
 
 @media screen and (min-width: 840px) {
@@ -99,8 +104,8 @@ footer {
     }
     .card h2 {
         text-align: left;
-        background-color: #210a86;
-        color: white;
+        background-color: var(--secondary-color);
+        color: var(--main-font-color);
         width: 180px;
         margin-left: -10px;
         padding: 10px;
